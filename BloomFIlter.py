@@ -9,7 +9,7 @@ class Bloom:
         self.FNV_OFFSET_BASIS = 14695981039346656037
         self.FNV_OFFSET_PRIME = 1099511628211
     
-    def __encodeHash(self, data: bytes) -> str:
+    def __encodeHash(self, data: bytes) -> int:
         data = data%self.dataSize
         return data
 
